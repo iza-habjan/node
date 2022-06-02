@@ -1,1 +1,2 @@
-console.log(module);
+require("./myscript.js");
+console.log(require.cache);
