@@ -133,3 +133,22 @@ paths: [
 ]
 }
 }
+
+## Debugging Node JS
+
+3 ways of debugging in Node:
+
+node **inspect** nameOfFile.js
+Start up a debugger **CLI** and pause execution whenever a "debugger" statement is hit
+node **--inspect** nameOfFile.js
+Start up a debugger instance and pause execution whenever a "debugger" statement is hit. Access the debugger at **_"chrome://inspect"_**
+node **--inspect-brk** nameOfFile.js
+Start up a debugger instance and **_wait to execute_** until a debugger is connected. Acces the debugger at **_"chrome://inspect"_**
+
+#### CLI Debugger Commands
+
+**c** Continue execution until program ends or next debugger statement
+**n** Run the next line of code
+**s** Step in to a function
+**o** Step out of the current function
+**repl** Starts an execution environment where different variables can be referenced inside of the program
